@@ -1,0 +1,68 @@
+header {
+  filter: drop-shadow(0 4px 3px var(--shadows));
+  backdrop-filter: blur(8px);
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  height: 4rem;
+  transition: background 200ms;
+  background: var(--dark-blue-tr);
+  color: var(--white);
+}
+
+.logo {
+  user-select: none;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+  padding: 1.75rem;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .header__nav {
+    padding: 1.75rem 2.25rem;
+  }
+  .header__nav p {
+    display: none;
+  }
+}
+
+.nightMode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+}
+.nightMode p {
+  user-select: none;
+  transition: transform 250ms;
+}
+.nightMode:hover p,
+.nightMode:focus p {
+  transform: scale(1.0375);
+  transition: transform 250ms;
+}
+.nightMode:hover .nightMode__moon,
+.nightMode:focus .nightMode__moon {
+  transform: rotate(-17deg);
+  transition: transform 250ms;
+}
+
+.nightMode__moon {
+  fill: white;
+  stroke: white;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 0.2rem;
+  transition: transform 250ms;
+}

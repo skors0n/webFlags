@@ -1,0 +1,14 @@
+:root {
+  --light-blue: hsla(209, 24%, 32%, 0.25);
+  --dark-blue: hsl(209, 23%, 22%);
+  --dark-blue-tr: hsla(209, 23%, 22%, 0.9525);
+  --darker-blue: hsl(207, 26%, 17%);
+  --very-dark-blue: hsl(200, 15%, 8%);
+  --dark-gray: hsl(0, 0%, 52%);
+  --very-light-gray: hsl(0, 14%, 95%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --tomato: hsla(9, 100%, 64%, 0.85);
+  
+  --shadows: rgb(0 0 0 / 0.07);
+}

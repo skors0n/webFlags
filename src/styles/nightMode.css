@@ -1,0 +1,32 @@
+body.lightMode {
+  background: var(--very-light-gray);
+}
+
+body.lightMode a,
+body.lightMode p,
+body.lightMode .countryCard__info > *,
+body.lightMode #region,
+body.lightMode #query,
+body.lightMode #query::placeholder {
+  color: var(--black);
+}
+
+body.lightMode header,
+body.lightMode footer,
+body.lightMode .countryCard,
+body.lightMode #region,
+body.lightMode #query {
+  background: var(--white);
+}
+
+body.lightMode .buttonBack {
+  background: var(--dark-gray);
+}
+
+body.lightMode .nightMode__moon path {
+  fill: var(--black);
+}
+
+body.lightMode *:focus-visible {
+  outline: 1px dotted var(--black);
+}

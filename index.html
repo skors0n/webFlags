@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flags web</title>
+    <link rel="stylesheet" href="src/styles/style.css" />
+  </head>
+  <body>
+    <div id="top"></div>
+
+    <!-- Header -->
+    <header id="header">
+      <nav class="header__nav" aria-label="header navigation">
+        <a class="logo" href="#">Flags of the world!</a>
+        <div tabindex="0" class="nightMode">
+          <svg
+            class="nightMode__moon"
+            height="512px"
+            width="512px"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M349.852,343.15c-49.875,49.916-131.083,49.916-181,0c-49.916-49.918-49.916-131.125,0-181.021  c13.209-13.187,29.312-23.25,47.832-29.812c5.834-2.042,12.293-0.562,16.625,3.792c4.376,4.375,5.855,10.833,3.793,16.625  c-12.542,35.375-4,73.666,22.25,99.917c26.209,26.228,64.5,34.75,99.916,22.25c5.792-2.062,12.271-0.582,16.625,3.793  c4.376,4.332,5.834,10.812,3.771,16.625C373.143,313.838,363.06,329.941,349.852,343.15z M191.477,184.754  c-37.438,37.438-37.438,98.354,0,135.771c40,40.021,108.125,36.416,143-8.168c-35.959,2.25-71.375-10.729-97.75-37.084  c-26.375-26.354-39.333-61.771-37.084-97.729C196.769,179.796,194.039,182.192,191.477,184.754z"
+              fill="white"
+            />
+          </svg>
+          <p>Night mode</p>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main  -->
+    <main class="cardsContainer">
+      <nav class="cardsContainer__nav" aria-label="search navigation">
+        <div class="cardsContainer__search">
+          <input
+            type="text"
+            id="query"
+            placeholder="Search for a country..."
+            autocomplete="country-name"
+          />
+        </div>
+        <select name="region" id="region" autocomplete="country-name">
+          <option value="">Filter by region</option>
+          <option value="Europe">Europe</option>
+          <option value="Americas">Americas</option>
+          <option value="Asia">Asia</option>
+          <option value="Africa">Africa</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+      </nav>
+      <main id="root"></main>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <a href="https://github.com/skors0nn">made by Dominic©</a>
+    </footer>
+
+    <a class="buttonBack" href="#top">
+      <img src="assets/arrow-up.png" alt="icon" />
+      <img src="assets/arrow-up.png" alt="icon" />
+    </a>
+
+    <div class="countryNotFound">
+      <p>This country does not exist!</p>
+    </div>
+
+    <script type="module" src="src/scripts/main.js"></script>
+  </body>
+</html>

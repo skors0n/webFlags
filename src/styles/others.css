@@ -1,0 +1,80 @@
+*:focus-visible {
+  outline: 1px dotted var(--white);
+  padding: 0.175rem;
+  transition: 125ms;
+  border-radius: 0.15rem;
+}
+
+body {
+  overflow-x: hidden;
+  transition: background 200ms;
+  background: var(--darker-blue);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* scroll top button */
+.buttonBack {
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07));
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 2rem;
+  right: -100%;
+  overflow: hidden;
+  width: 3.25rem;
+  height: 3.25rem;
+  background: var(--light-blue);
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.buttonBack:hover,
+.buttonBack:focus {
+  transform: scale(1.0375) rotate(-9deg);
+  transition: transform 150ms;
+}
+.buttonBack img {
+  margin: 1rem;
+  transition: transform 200ms;
+}
+.buttonBack:hover img,
+.buttonBack:focus img {
+  transform: translateY(-3.25rem);
+  transition: transform 200ms;
+}
+.buttonBack:active {
+  filter: brightness(1.065);
+  transform: scale(1.25);
+}
+
+.buttonBack.visible {
+  right: 2rem;
+  transition: 500ms;
+}
+
+/* not found comunicat */
+.countryNotFound {
+  outline: 2px dotted tomato;
+  backdrop-filter: blur(8px);
+  pointer-events: none !important;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  width: 10rem;
+  padding: 1rem;
+  transition: opacity 125ms;
+  background: var(--tomato);
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--black);
+  text-align: center;
+}
+.countryNotFound.visible {
+  pointer-events: all !important;
+  opacity: 1;
+  transition: 125ms;
+  cursor: no-drop;
+}
